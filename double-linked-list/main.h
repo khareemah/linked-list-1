@@ -8,4 +8,6 @@ struct node
     struct node *prev;
 };
 
+size_t node_count(const struct node *head);
+
 #endif

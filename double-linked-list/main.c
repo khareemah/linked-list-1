@@ -2,10 +2,15 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * main - implements a double linked list
+ */
 int main(void)
 {
-    struct node *head, *newnode, *temp;
     int choice = 1;
+    size_t number_of_nodes;
+    struct node *head, *newnode, *temp;
+
     head = NULL;
 
     while (choice)
@@ -29,7 +34,6 @@ int main(void)
         printf("Do you want to continue to add nodes? (0, 1)");
         scanf("%d", &choice);
     }
+    number_of_nodes = node_count(head);
     return (0);
-
-    // implementation of a double linked list
 }
