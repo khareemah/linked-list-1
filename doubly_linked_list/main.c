@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * main - implements a double linked list
@@ -35,5 +34,7 @@ int main(void)
         scanf("%d", &choice);
     }
     number_of_nodes = node_count(head);
+    insert_at_beginning(head);
+
     return (0);
 }

@@ -22,7 +22,7 @@ size_t node_count(const struct node *head)
             temp = temp->next;
             counter++;
         }
-        printf("There are %d nodes in this doubly linked list", counter);
+        printf("There are %d nodes in this doubly linked list\n", counter);
 
         return counter;
     }
