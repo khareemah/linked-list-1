@@ -8,7 +8,7 @@ int main(void)
 {
     int choice = 1;
     size_t number_of_nodes;
-    struct node *head, *newnode, *temp;
+    struct node *head, *newnode, *tail;
 
     head = NULL;
 
@@ -22,19 +22,20 @@ int main(void)
         if (head == NULL)
         {
             newnode->prev = NULL;
-            head = temp = newnode;
+            head = tail = newnode;
         }
         else
         {
-            newnode->prev = temp;
-            temp->next = newnode;
-            temp = newnode;
+            newnode->prev = tail;
+            tail->next = newnode;
+            tail = newnode;
         }
         printf("Do you want to continue to add nodes? (0, 1)");
         scanf("%d", &choice);
     }
-    number_of_nodes = node_count(head);
+    node_count(head);
     insert_at_beginning(head);
+    insert_at_end(head, tail);
 
     return (0);
 }

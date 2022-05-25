@@ -9,6 +9,7 @@ struct node
     struct node *prev;
 };
 
-size_t node_count(const struct node *head);
+size_t node_count(struct node *head);
 void insert_at_beginning(struct node *head);
+void insert_at_end(struct node *tail, struct node *head);
 #endif

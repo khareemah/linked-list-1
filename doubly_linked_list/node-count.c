@@ -4,7 +4,7 @@
 /**
  * node_count - a function that lists the value if node and returns number of nodes
  */
-size_t node_count(const struct node *head)
+size_t node_count(struct node *head)
 {
     int counter = 0;
     const struct node *temp;

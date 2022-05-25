@@ -20,5 +20,6 @@ void insert_at_beginning(struct node *head)
         head->prev = newnode;
         head = newnode;
     }
+
     node_count(head);
 }
