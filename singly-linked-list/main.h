@@ -7,7 +7,7 @@ struct node
     struct node *next;
 };
 
-size_t node_count(struct node *head);
-void add_node_begin(struct node *head);
+struct node *add_node_end(struct node **head, int x);
+int node_count(struct node *head);
 
 #endif

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
-size_t node_count(struct node *head)
+int node_count(struct node *head)
 {
     int counter = 0;
     struct node *temp;
+
     temp = head;
     if (head == NULL)
     {
@@ -20,5 +21,6 @@ size_t node_count(struct node *head)
             counter++;
         }
     }
+    printf("length of node is %d", counter);
     return (counter);
 }
